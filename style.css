@@ -56,6 +56,17 @@ main {
   margin-top: 10px;
 }
 
+#imagem-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+#imagem-body img {
+  height: 500px;
+}
+
 footer {
   display: flex;
   align-items: center;
