@@ -1,0 +1,19 @@
+main {
+  display: flex;
+}
+
+#evalution-form {
+  display: flex;
+  width: 675px;
+  flex-direction: column;
+  text-align: center;
+  border: 1px solid red;
+}
+
+#evalution-form input {
+  width: 325px;
+}
+
+#evalution-form select {
+  width: 294px;
+}
