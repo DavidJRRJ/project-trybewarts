@@ -21,6 +21,7 @@ checkbox.addEventListener('change', function() {
     console.log("Checkbox is checked..");
     let btn = document.createElement('button');
     btn.id = 'submit-btn';
+    btn.innerHTML = 'Enviar'
     txt.appendChild(btn);
   } else {
     console.log("Checkbox is not checked..");
