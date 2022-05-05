@@ -29,4 +29,8 @@ function count() {
   contador.innerText = resultado;
 }
 textarea.addEventListener('keyup', count);
+<<<<<<< HEAD
 count();
+=======
+count();
+>>>>>>> 9f629a1d39584893f8a30220c5f24e215456f5c3
