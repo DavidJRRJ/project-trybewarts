@@ -1,0 +1,45 @@
+.header{
+    display: flex;
+    background-color: rgb( 50 , 167, 145);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trybewarts-login{
+    display: flex;
+    height: 50px;
+    width: 700px;
+    justify-content: space-around;
+}
+
+#trybewarts-header-title{
+    color: white;
+}
+
+#email{
+    border-radius: 10px;
+    width: 30%;
+}
+
+#senha{
+    border-radius: 10px;
+    width: 30%;
+}
+
+#button1{
+ width: 20%;
+ border-radius: 10px;
+ background-color: purple;
+ font-family: serif;
+ font-size: medium;
+ font-weight: bold;
+ color: white;
+}
+
+.div-login{
+    width: 40%;
+}
+
+.trybewarts-header-logo{
+    width: 40%;
+}
