@@ -6,6 +6,7 @@ let submitButton = document.getElementById('submit-btn');
 let checkbox = document.getElementById('agreement')
 checkbox.addEventListener('click',checaBox);
 let contador = document.getElementById('counter');
+let textarea = document.getElementById('textarea');
 submitButton.disabled = true;
 count();
 
@@ -24,7 +25,9 @@ function login(event){
 }
 
 function count() {
-    contador.innerText = '500'
+    let valor = textarea.value.length
+    let resultado = 500 - valor
+    contador.innerText = resultado
 }
 
 
