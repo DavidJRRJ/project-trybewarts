@@ -9,13 +9,13 @@
 </head>
 <body>
     <main>
-        <form action="" id="evalution-form">
+        <form action="" id="evaluation-form">
             <p>Formulário de Avaliação</p>
-            <div>
+            <div class="inpt">
                 <input type="text" name="nome" id="input-name" placeholder="Nome">
                 <input type="text" name="sobrenome" id="input-lastname" placeholder="Sobrenome">
             </div>
-            <div>
+            <div class="inpt">
                 <input type="email" name="email" id="input-email" placeholder="Email">
                 <label for="casa">Casa:</label>
                 <select name="casa" id="house">
@@ -25,7 +25,69 @@
                     <option value="Pytherina" id="pytherina-house">Pytherina</option>
                 </select>
             </div>
+            <div>
+                <div id="family">
+                    <label id="label-family">Qual sua família?</label>
+                    <span> 
+                        <label for="r1">Família Frontend </label>
+                        <input type="radio" name="family" id="r1" value="Frontend">
+                    </span>
+                    <span>
+                        <label for="r2">Família Backend </label>
+                        <input type="radio" name="family" id="r2" value="Backend">
+                    </span>
+                    <span>
+                        <label for="r3">Família Fullstack</label>
+                        <input type="radio" name="family" id="r3" value="FullStack">
+                    </span>
+                </div>
+                <div id="label-cont">
+                    <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+                    <br>
+                    <label for="hofs">HoFs</label>
+                    <input type="checkbox" name="hofs" value="HoFs">
+                    <label for="jest">Jest</label>
+                    <input type="checkbox" name="jest" value="Jest">
+                    <label for="promises">Promises</label>
+                    <input type="checkbox" name="promises" value="Promises">
+                    <label for="react">React</label>
+                    <input type="checkbox" name="react" value="React">
+                    <label for="sql">SQL</label>
+                    <input type="checkbox" name="sql" value="SQL">
+                    <label for="python">Python</label>
+                    <input type="checkbox" name="python" value="Python">
+                </div>
+                <br>
+                <div id="rate">
+                    <label for="rate" id="label-rate">Como você avalia a Trybewarts?</label>
+                            <div id="rate-radio">
+                            <input type="radio" name="rate" value="1">1</input>
+                            <input type="radio" name="rate" value="2">2</input>
+                            <input type="radio" name="rate" value="3">3</input>
+                            <input type="radio" name="rate" value="4">4</input>
+                            <input type="radio" name="rate" value="5">5</input>
+                            <input type="radio" name="rate" value="6">6</input>
+                            <input type="radio" name="rate" value="7">7</input>
+                            <input type="radio" name="rate" value="8">8</input>
+                            <input type="radio" name="rate" value="9">9</input>
+                            <input type="radio" name="rate" value="10">10</input>
+                    </div>
+                </div>
+                <br>
+                <div id="txt">
+                    <label for="textarea" class="textarea">Deixe seu comentário:</label>
+                    <textarea name="textarea" id="textarea" maxlength="500" cols="50" rows="5"></textarea>
+                    <span>
+                        <label for="check" id="label-infos">Você concorda com o uso das informações acima?</label>
+                        <input type="checkbox" name="check" id="agreement">
+                    </span>
+                    <button type="submit" id="submit-btn">Enviar</button>
+                </div>
+            </div>
         </form>
     </main>
+    <footer>
+        <p>Direitos reservados à Trybewarts©</p>
+    </footer>
 </body>
 </html>
