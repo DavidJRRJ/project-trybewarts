@@ -8,6 +8,7 @@ checkbox.addEventListener('click',checaBox);
 let contador = document.getElementById('counter');
 let textarea = document.getElementById('textarea');
 submitButton.disabled = true;
+textarea.addEventListener('keyup' , count);
 count();
 
 function checaBox(){
