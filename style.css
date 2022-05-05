@@ -1,123 +1,123 @@
 .header{
-    display: flex;
-    background-color: rgb( 50 , 167, 145);
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  background-color: rgb( 50 , 167, 145);
+  justify-content: space-between;
+  align-items: center;
 }
 
 .trybewarts-login{
-    display: flex;
-    height: 50px;
-    width: 700px;
-    justify-content: space-around;
+  display: flex;
+  height: 50px;
+  width: 700px;
+  justify-content: space-around;
 }
 
 #trybewarts-header-title{
-    color: white;
+  color: white;
 }
 
 #email{
-    border-radius: 10px;
-    width: 30%;
+  border-radius: 10px;
+  width: 30%;
 }
 
 #senha{
-    border-radius: 10px;
-    width: 30%;
+  border-radius: 10px;
+  width: 30%;
 }
 
 #button1{
- width: 20%;
- border-radius: 10px;
- background-color: purple;
- font-family: serif;
- font-size: medium;
- font-weight: bold;
- color: white;
+width: 20%;
+border-radius: 10px;
+background-color: purple;
+font-family: serif;
+font-size: medium;
+font-weight: bold;
+color: white;
 }
 
 .div-login{
-    width: 40%;
+  width: 40%;
 }
 
 .trybewarts-header-logo{
-    width: 40%;
+  width: 40%;
 }
 
 main{
-  display: flex;
+display: flex;
 }
 
 #evaluation-form {
-  display: flex;
-  width: 675px;
-  flex-direction: column;
+display: flex;
+width: 675px;
+flex-direction: column;
 }
 
 #evaluation-form input {
-  width: 325px;
+width: 325px;
 }
 
 #evaluation-form select {
-  width: 294px;
+width: 294px;
 }
 
 #family {
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px;
+display: flex;
+flex-direction: column;
+margin-top: 20px;
 }
 
 #family p {
-  text-align: center;
+text-align: center;
 }
 
 #txt {
-  display: flex;
-  flex-direction: column;
+display: flex;
+flex-direction: column;
 }
 
 #txt span {
-  margin-top: 10px;
-  margin-bottom: 10px;
+margin-top: 10px;
+margin-bottom: 10px;
 }
 
 #label-cont {
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px;
+display: flex;
+flex-direction: column;
+margin-top: 20px;
 }
 
 #rate {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+display: flex;
+flex-direction: column;
+align-items: center;
 }
 
 #rate-radio {
-  display: flex;
-  flex-direction: row;
-  width: 675px;
-  margin-top: 10px;
+display: flex;
+flex-direction: row;
+width: 675px;
+margin-top: 10px;
 }
 
 #imagem-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 50%;
 }
 
 #imagem-body img {
-  height: 500px;
+height: 500px;
 }
 
 footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 3em;
-  background-color: gray;
-  margin-top: 5%;
+display: flex;
+align-items: center;
+justify-content: center;
+width: 100%;
+height: 3em;
+background-color: gray;
+margin-top: 5%;
 }
