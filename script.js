@@ -5,6 +5,7 @@ const submitButton = document.getElementById('submit-btn');
 const checkbox = document.getElementById('agreement');
 const contador = document.getElementById('counter');
 const textarea = document.getElementById('textarea');
+const subject = document.querySelectorAll('.subject');
 submitButton.disabled = true;
 
 function checaBox() {
@@ -31,6 +32,15 @@ function count() {
 textarea.addEventListener('keyup', count);
 count();
 
+function content() {
+  const conteudo = [];
+  for (let i = 0; i < subject.length; i += 1) {
+    if (subject[i].checked) {
+      conteudo.push(` ${subject[i].value}`);
+    }
+  }
+  return conteudo.toString();
+}
 
 function novoForm() {
   const form = document.getElementById('evaluation-form');
@@ -40,11 +50,11 @@ function novoForm() {
   const casa = document.getElementById('house');
   const family = document.querySelector('input[name="family"]:checked').value;
   const rate = document.querySelector('input[name="rate"]:checked').value;
-  const content = document.querySelector('input[name="content"]:checked').value;
+  //const content = document.querySelector('input[name="content"]:checked').value;
   form.innerHTML = '';
   form.innerText = `Nome: ${nome.value} ${Snome.value} \n
   Email: ${email.value} \n Casa: ${casa.value} \n Família: ${family} \n 
-  Matérias: ${content} \n
+  Matérias: ${content()} \n
   Avaliação: ${rate} \n
   Observações: ${textarea.value}`;
 }
