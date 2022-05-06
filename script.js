@@ -46,11 +46,9 @@ function novoForm() {
   const form = document.getElementById('evaluation-form');
   const nome = document.getElementById('input-name');
   const Snome = document.getElementById('input-lastname');
-  const email = document.getElementById('input-email');
   const casa = document.getElementById('house');
   const family = document.querySelector('input[name="family"]:checked').value;
   const rate = document.querySelector('input[name="rate"]:checked').value;
-  //const content = document.querySelector('input[name="content"]:checked').value;
   form.innerHTML = '';
   form.innerText = `Nome: ${nome.value} ${Snome.value} \n
   Email: ${email.value} \n Casa: ${casa.value} \n Família: ${family} \n 
