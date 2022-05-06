@@ -45,13 +45,14 @@ function content() {
 function novoForm() {
   const form = document.getElementById('evaluation-form');
   const nome = document.getElementById('input-name');
+  const emailForm = document.getElementById('input-email');
   const Snome = document.getElementById('input-lastname');
   const casa = document.getElementById('house');
   const family = document.querySelector('input[name="family"]:checked').value;
   const rate = document.querySelector('input[name="rate"]:checked').value;
   form.innerHTML = '';
   form.innerText = `Nome: ${nome.value} ${Snome.value} \n
-  Email: ${email.value} \n Casa: ${casa.value} \n Família: ${family} \n 
+  Email: ${emailForm.value} \n Casa: ${casa.value} \n Família: ${family} \n 
   Matérias: ${content()} \n
   Avaliação: ${rate} \n
   Observações: ${textarea.value}`;
