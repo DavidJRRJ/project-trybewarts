@@ -29,8 +29,25 @@ function count() {
   contador.innerText = resultado;
 }
 textarea.addEventListener('keyup', count);
-<<<<<<< HEAD
 count();
-=======
-count();
->>>>>>> 9f629a1d39584893f8a30220c5f24e215456f5c3
+
+
+function novoForm(event) {
+  event.preventDefault();
+  const form = document.getElementById('evaluation-form');
+  const nome = document.getElementById('input-name');
+  const Snome = document.getElementById('input-lastname');
+  const email = document.getElementById('input-email');
+  const casa = document.getElementById('house');
+  const family = document.querySelector('input[name="family"]:checked').value;
+  const rate = document.querySelector('input[name="rate"]:checked').value;
+  const content = document.querySelector('input[name="content"]:checked').value;
+  form.innerHTML = '';
+  form.innerText = `Nome: ${nome.value} ${Snome.value} \n
+  Email: ${email.value} \n Casa: ${casa.value} \n Família: ${family} \n 
+  Matérias: ${content} \n
+  Avaliação: ${rate} \n
+  Observações: ${textarea.value}`;
+}
+
+submitButton.addEventListener('click', novoForm);
