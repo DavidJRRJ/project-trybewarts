@@ -32,8 +32,7 @@ textarea.addEventListener('keyup', count);
 count();
 
 
-function novoForm(event) {
-  event.preventDefault();
+function novoForm() {
   const form = document.getElementById('evaluation-form');
   const nome = document.getElementById('input-name');
   const Snome = document.getElementById('input-lastname');
