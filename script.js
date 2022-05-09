@@ -59,5 +59,3 @@ function novoForm() {
 }
 
 submitButton.addEventListener('click', novoForm);
-
-// projeto finalizado
